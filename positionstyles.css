@@ -178,7 +178,7 @@
   height: 200px; 
   background-color: green; 
   z-index: 5;
-  margin-bottom: -500;
+  margin-bottom: -500 ;
   grid-column: 2/3;
 } 
 .yellow6 {
