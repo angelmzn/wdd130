@@ -1,0 +1,139 @@
+/* if you are using any Google fonts change the font names below to your fonts. 
+Any spaces in your font name should be replaced with a +. 
+Fonts are separated by a | */
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #264653   ;
+  --secondary-color: #f4a261 ;
+  --accent1-color: #e76f51;
+  --accent2-color: #ebd8a9;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Roboto, Montserrat, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #264653;  /* headlines on a white background */ 
+  --headline-color-on-color: #ebd8a9; /* headlines on a colored background */ 
+  --paragraph-color-on-white: #264653; /* paragraph text on a white background */ 
+  --paragraph-color-on-color: #ebd8a9; /* paragraph text on a colored background */ 
+  --paragraph-background-color: #2a9d8f  ;
+  --nav-link-color: #396E94;
+  --nav-background-color: #D4AC0D;
+  --nav-hover-link-color: #ebd8a9;
+  --nav-hover-background-color: #264653;
+}
+
+
+
+
+body, #container{
+    margin: 0;
+    font-family: Lato, Roboto, Montserrat, Arial, Helvetica, sans-serif;
+}
+
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    background-color: var(--nav-link-color);
+}
+
+#logo img {
+    width: 100px;
+    height: 100px;
+}
+
+#logo{
+    margin: 0 auto;
+}
+
+#buttons{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+}
+
+.button{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--paragraph-color-on-white);
+    color: white;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.image img{
+    width: 100%;
+    height: auto;
+}
+
+
+#action {
+    margin-top: -500px;
+    height: 300px;
+    width: 600px;
+    margin-left: 150px;
+    margin-bottom: auto;
+}
+
+#action h1{
+    font-size: 4em;
+    text-shadow: 3px 3px 6px var(--primary-color);
+}
+
+#action p{
+    font-size: 2em;
+    font-weight: bold;
+    width: 75%;
+    text-shadow: 3px 3px 6px var(--primary-color);
+}
+
+.button:hover{
+    background-color: var(--paragraph-background-color);
+}
+
+#search{
+    margin-top: 50px;
+}
+
+footer{
+    margin-top: 150px;
+    text-align: center;
+    z-index: -1;
+    background-color: #396E94;
+    height: 200px;
+}
+
+footer p{
+    color: var(--accent2-color);
+    font-size: 2em;
+    padding-top: 100px;
+}
+
+.not_home{
+    margin-top: 0px;
+}
+
+#boxes-container{
+    width: 100%;
+    margin-top: 200px;
+    min-height: 800px;
+    display: grid;
+    grid-template-areas: 
+    "box_main box_main box_main box_small1"
+    "box_main box_main box_main box_small2";
+}
+
+.box{
+    background-color: #264653;
+    width: 100%;
+    margin: 15px;
+}
