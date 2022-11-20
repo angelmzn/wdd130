@@ -34,6 +34,8 @@ Fonts are separated by a | */
 body, #container{
     margin: 0;
     font-family: Lato, Roboto, Montserrat, Arial, Helvetica, sans-serif;
+    min-height: max-content;
+    background-color: #264653;
 }
 
 
@@ -105,7 +107,7 @@ header{
 }
 
 footer{
-    margin-top: 150px;
+    margin-top: -30px;
     text-align: center;
     z-index: -1;
     background-color: #396E94;
@@ -123,17 +125,109 @@ footer p{
 }
 
 #boxes-container{
-    width: 100%;
-    margin-top: 200px;
-    min-height: 800px;
-    display: grid;
+    background-color: var(--paragraph-background-color);
+    margin-top: 150px;
+    min-height: 500px;
+    max-height: 530px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 15px;
     grid-template-areas: 
-    "box_main box_main box_main box_small1"
-    "box_main box_main box_main box_small2";
+      "box_main box_main box_small1"
+      "box_main box_main box_small2"
+      ". . ."; 
+  }
+  .box_main { grid-area: box_main; }
+  .box_small1 { grid-area: box_small1; }
+  .box_small1 { grid-area: box_small1; }
+
+
+
+.other-box-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-.box{
+
+.box, .box_main, .box_small1, .box_small2{
     background-color: #264653;
     width: 100%;
     margin: 15px;
+    min-height: 100%;
+    gap: 15px;
+    
 }
+
+.box_main{
+    min-height: 470px;
+    background-image: url("https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2018/07/01153710/benefits-of-working-from-home-1024x512.jpg");
+    height: fit-content;
+}
+
+#box-main-text{
+    margin: 30px;
+    margin-top: 300px;
+}
+
+#box-main-text h1{
+    font-size: 3em;
+    text-shadow: 3px 3px 6px var(--primary-color);
+}
+
+#box-main-text h2{
+    font-size: 2em;
+    text-shadow: 3px 3px 6px var(--primary-color);
+}
+
+.box_small1{
+    background-image: url("https://assets.videomaker.com/2021/11/Video-editing-software.jpg");
+    background-size: cover;
+    max-width: 95%;
+}
+
+.box_small2{
+    background-image: url("https://www.secondnature.com.au/wp-content/uploads/2019/12/shutterstock_1361250578__1_-1024x576.jpg");
+    background-size: cover;
+    max-width: 95%;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    max-width: 75%;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .galery-container{
+    min-height: 300px;
+    width: 100%;
+
+
+  }
+  footer .not_home{
+    margin-top: 500px;
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/
+    height: 40px;
+    background: grey;
+  }
