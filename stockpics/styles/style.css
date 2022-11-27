@@ -30,7 +30,6 @@ Fonts are separated by a | */
 
 
 
-
 body, #container{
     margin: 0;
     font-family: Lato, Roboto, Montserrat, Arial, Helvetica, sans-serif;
@@ -44,6 +43,8 @@ header{
     display: grid;
     grid-template-columns: 1fr 5fr 2fr;
     background-color: var(--nav-link-color);
+    position: fixed;
+    width: 100%;
 }
 
 #logo img {
@@ -76,6 +77,7 @@ header{
 
 
 #action {
+    padding: 100px;
     width: 100%;
     bottom: 0;
     padding-top: 5em;
@@ -90,6 +92,7 @@ header{
 #action h1{
     font-size: 4em;
     text-shadow: 3px 3px 6px var(--primary-color);
+    padding-top: 100px;
 }
 
 #action p{
@@ -219,7 +222,11 @@ div.gallery {
 
   .galery-container{
     min-height: 300px;
-    width: 100%;
+    padding: 50px 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    padding-top: 200px;
 
 
   }
@@ -232,4 +239,58 @@ div.gallery {
   .fa-brands{
     padding: 10px 30px;
     justify-items: center;
+  }
+
+  #text-content h1, #text-content p{
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  #text-content h1 {
+    font-size: 4em;
+  }
+
+  #text-content p {
+    font-size: 2em;
+  }
+
+  #text-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url("https://eatsleepworkrepeat.com/wp-content/uploads/2020/06/office.jpg");
+    background-size: cover;
+    text-shadow: 3px 3px 6px var(--primary-color);
+    font-weight: bold;
+  }
+
+  .small-letters{
+    font-size: small;
+    display: inline;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .gallery:hover + .hide {
+    display: block;
+  }
+
+  .contact_container{
+    padding-top: 200px;
+    display: block;
+  }
+
+  #contact_form {
+    margin: auto;
+    width: 50%;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  input {
+    width: 50%;
   }
