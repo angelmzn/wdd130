@@ -426,3 +426,59 @@ ul{
   margin: 0;
   padding: 0;
 }
+
+#about-us-container{
+  padding-top: 100px;
+}
+
+.about-item{
+  min-height: 600px;
+  font-size: larger;
+}
+
+#about-us-container .about-item:nth-child(1){
+  font-weight: bold;
+  background-image: url("https://thumbs.dreamstime.com/b/concept-banner-startup-small-business-blue-background-isometric-cubes-people-walking-talking-horizontal-design-web-122341154.jpg");
+  background-size: cover;
+}
+
+#about-us-container .about-item:nth-child(2){
+  font-weight: bold;
+  background-image: url("https://images.pexels.com/photos/267151/pexels-photo-267151.jpeg?auto=compress&cs=tinysrgb&w=600");
+  background-size: cover;
+}
+
+#about-us-container .about-item:nth-child(3){
+  font-weight: bold;
+  background-image: url("https://img.freepik.com/premium-vector/creative-business-icons-banner-concept-innovation-startup-artwork-project-idea-web-banner_121070-1043.jpg?w=2000");
+  background-size: cover;
+}
+
+.about-item h1{
+  padding-top: 125px;
+  
+}
+
+.about-item h1, .about-item p{
+  max-width: 700px;
+  padding-left: 5%;
+  text-shadow: 3px 3px 6px var(--primary-color);
+}
+
+.about-item button{
+  margin-left: 5%;
+  margin-top: 50px;
+  font-size: xx-large;
+  padding: 10px;
+  background-color: var(--accent1-color);
+  border-radius: 5%;
+  color: var(--paragraph-color-on-white);
+}
+
+.about-item button:hover {
+  color: var(--paragraph-color-on-color);
+  background-color: #e91e63;
+  font-size: 2em;
+  transition-duration: 0.5s;
+}
+
