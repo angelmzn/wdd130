@@ -177,3 +177,10 @@ nav a:hover {
   border-right: 1px solid;
 }
 
+#about-us-container h1{
+  font-size: 1em;
+}
+
+#about-us-container p{
+  font-size: 0.5em; 
+}
