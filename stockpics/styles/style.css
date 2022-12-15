@@ -263,6 +263,8 @@ div.gallery {
     display: block;
     background-color: var(--paragraph-background-color);
     padding-bottom: 50px;
+    background-image: url("https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-mail-icons-symbol-telephone-mail-address-mobile-phone-website-page-contact-us-web-banner-copy-space-blue-background_256259-2441.jpg?w=2000");
+    background-size: cover;
   }
 
   #contact_form {
@@ -484,3 +486,12 @@ ul{
   transition-duration: 0.5s;
 }
 
+#contact-text{
+  text-shadow: 3px 3px 6px var(--primary-color);
+  font-weight: bold;
+  padding-bottom: 50px;
+}
+
+#contact_box{
+  
+}
